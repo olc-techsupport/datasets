@@ -12,28 +12,6 @@ All data are intended for research, education, and conservation purposes — and
 
 ---
 
-## Quick Navigation
-
-| Section | Jump to |
-|---------|---------|
-| Geographic and Spatial Data | [Go](#geographic-and-spatial-data) |
-| Geology and Soils Data | [Go](#geology-and-soils-data) |
-| Elevation and Topography | [Go](#elevation-and-topography) |
-| Climate Data | [Go](#climate-data) |
-| Vegetation and Land Cover | [Go](#vegetation-and-land-cover) |
-| Hydrology | [Go](#hydrology) |
-| Satellite and Remote Sensing Data | [Go](#satellite-and-remote-sensing-data) |
-| Conservation and Wildlife Data | [Go](#conservation-and-wildlife-data) |
-| Agricultural Data | [Go](#agricultural-data) |
-| Environmental Monitoring Data | [Go](#environmental-monitoring-data) |
-| Infrastructure Data | [Go](#infrastructure-data) |
-| Fire-related Datasets | [Go](#fire-related-datasets) |
-| Socio-Cultural Data | [Go](#socio-cultural-data) |
-| Educational and Research Data | [Go](#educational-and-research-data) |
-| References and Acknowledgments | [Go](#references-and-acknowledgments) |
-
----
-
 <details>
 <summary><strong>Geographic and Spatial Data</strong></summary>
 
