@@ -1,192 +1,188 @@
-OLC NIFA Data Cube Datasets
+# OLC NIFA Data Cube Datasets
 
-This repository organizes key geospatial, environmental, and socio-cultural datasets used in the Oglala Lakota College (OLC) NIFA Data Cube project.
+## Overview
+
+This repository organizes key geospatial, environmental, and socio-cultural datasets used in the Oglala Lakota College (OLC) NIFA Data Cube project.  
 These datasets support research, education, and land stewardship — including work with the Pine Ridge Reservation and surrounding regions.
 
-Table of Contents
-
-Overview
-
-Geographic and Spatial Data
-
-Geology and Soils Data
-
-Elevation and Topography
-
-Climate Data
-
-Vegetation and Land Cover
-
-Hydrology
-
-Satellite and Remote Sensing Data
-
-Conservation and Wildlife Data
-
-Agricultural Data
-
-Environmental Monitoring Data
-
-Infrastructure Data
-
-Fire-related Datasets
-
-Socio-Cultural Data
-
-Educational and Research Data
-
-References and Acknowledgments
-
-Overview
-
-The OLC NIFA Data Cube integrates multi-source datasets for ecological, climate, and land-use research in the Northern Great Plains region.
+The OLC NIFA Data Cube integrates multi-source datasets for ecological, climate, and land-use research in the Northern Great Plains region.  
 The project emphasizes Tribal data sovereignty, open science, and land-based education.
 
 All data are intended for research, education, and conservation purposes — and should be used following proper attribution and data sharing agreements, particularly for Tribal and culturally sensitive data.
 
-Geographic and Spatial Data
+---
+
+## Quick Navigation
+
+| Section | Jump to |
+|---------|---------|
+| Geographic and Spatial Data | [Go](#geographic-and-spatial-data) |
+| Geology and Soils Data | [Go](#geology-and-soils-data) |
+| Elevation and Topography | [Go](#elevation-and-topography) |
+| Climate Data | [Go](#climate-data) |
+| Vegetation and Land Cover | [Go](#vegetation-and-land-cover) |
+| Hydrology | [Go](#hydrology) |
+| Satellite and Remote Sensing Data | [Go](#satellite-and-remote-sensing-data) |
+| Conservation and Wildlife Data | [Go](#conservation-and-wildlife-data) |
+| Agricultural Data | [Go](#agricultural-data) |
+| Environmental Monitoring Data | [Go](#environmental-monitoring-data) |
+| Infrastructure Data | [Go](#infrastructure-data) |
+| Fire-related Datasets | [Go](#fire-related-datasets) |
+| Socio-Cultural Data | [Go](#socio-cultural-data) |
+| Educational and Research Data | [Go](#educational-and-research-data) |
+| References and Acknowledgments | [Go](#references-and-acknowledgments) |
+
+---
 
-USGS Protected Areas Database (PAD-US): Link
+<details>
+<summary><strong>Geographic and Spatial Data</strong></summary>
 
-OpenStreetMap (OSM): Link
+- **USGS Protected Areas Database (PAD-US):** [Link](https://www.usgs.gov/programs/gap-analysis-project/science/protected-areas)  
+- **OpenStreetMap (OSM):** [Link](https://www.openstreetmap.org/)  
+- **Boundary Data:** Spatial boundaries for the Pine Ridge Reservation  
+  - GIS boundary datasets (Shapefiles/GeoJSON)  
+  - Option: Export full boundary from ArcGIS as GeoJSON  
 
-Boundary Data: Spatial boundaries for the Pine Ridge Reservation.
+</details>
 
-Includes GIS boundary datasets (Shapefiles/GeoJSON).
+<details>
+<summary><strong>Geology and Soils Data</strong></summary>
 
-Option: Export full boundary from ArcGIS as GeoJSON.
+- **POLARIS Soil Dataset:** [Link](https://daac.ornl.gov/get_data/)  
+  - Variables: Soil pH, organic matter, texture, etc.  
+  - Includes biomass, carbon, hydrology, and land use data  
+- **USDA NRCS Web Soil Survey:** [Link](https://websoilsurvey.sc.egov.usda.gov/App/HomePage.htm)  
+- **SSURGO Downloader (NRCS):** [Link](https://www.arcgis.com/apps/View/index.html?appid=cdc49bd63ea54dd2977f3f2853e07fff)  
+- **SoilGrids (ISRIC):** [Link](https://www.isric.org/explore/soilgrids)  
+- **South Dakota Geological Survey (SDGS):** [Link](https://www.sdgs.usd.edu/publications/default.aspx)  
 
-Geology and Soils Data
+</details>
 
-POLARIS Soil Dataset: Link
+<details>
+<summary><strong>Elevation and Topography</strong></summary>
 
-Variables: Soil pH, organic matter, texture, etc.
+- **USGS National Elevation Dataset (NED):** [Link](https://viewer.nationalmap.gov/basic/)  
+- **NASA SRTM (Shuttle Radar Topography Mission)**  
+- Derived variables: slope, aspect, hillshade  
 
-Includes additional data on biomass, carbon, hydrology, and land use.
+</details>
 
-USDA NRCS Web Soil Survey: Link
+<details>
+<summary><strong>Climate Data</strong></summary>
 
-SSURGO Downloader (NRCS): Link
+- **MACAv2-METDATA (THREDDS):** [Link](https://climate.northwestknowledge.net/MACA/)  
+  - Downscaled climate data (temperature, precipitation, humidity)  
+  - Scenarios: RCP 4.5, RCP 8.5  
+- **NOAA Climate Data (NCEI):** [Link](https://www.ncei.noaa.gov/)  
+- **PRISM Climate Data:** [Link](https://prism.oregonstate.edu)  
+- **GridMET:** [Link](https://www.climatologylab.org/gridmet.html)  
+- **DayMET:** [Link](https://daymet.ornl.gov/getdata)  
+- **NASA EarthData EOSDIS:** [Link](https://www.earthdata.nasa.gov/about/esdis/eosdis)  
+- **NASA Global Climate Change - Vital Signs of the Planet:** [Link](https://climate.nasa.gov/)  
+- **ESA Climate Change Initiative (ESA CCI):** [Link](https://climate.esa.int/en/)  
 
-SoilGrids (ISRIC): Link
+</details>
 
-South Dakota Geological Survey (SDGS): Link
+<details>
+<summary><strong>Vegetation and Land Cover</strong></summary>
 
-Elevation and Topography
+- **National Land Cover Database (NLCD):** [Link](https://www.mrlc.gov/data)  
+- **MODIS Land Cover (MOD12):** [Link](https://modis.gsfc.nasa.gov/data/dataprod/mod12.php)  
+- **BONAP (Biota of North America Program):** [Link](http://bonap.net/)  
+- **USGS Species Viewer:** [Link](https://www.usgs.gov/programs/gap-analysis-project/science/species)  
+- **USFS National Grasslands:** [Link](https://www.fs.usda.gov/grasslands/)  
+- **NDVI/EVI:** Derived from MODIS or Sentinel-2 for vegetation health  
 
-USGS National Elevation Dataset (NED): Link
+</details>
 
-NASA SRTM (Shuttle Radar Topography Mission)
+<details>
+<summary><strong>Hydrology</strong></summary>
 
-Derived variables: slope, aspect, hillshade.
+- **USGS National Hydrography Dataset (NHDPlus HR):** [Link](https://www.usgs.gov/core-science-systems/ngp/national-hydrography)  
+- **NASA GRACE (Groundwater Data):** [Link](https://grace.jpl.nasa.gov/)  
+- **USGS Water Data for the Nation:** [Link](https://waterdata.usgs.gov/nwis?)  
+- **Global Runoff Data Centre (GRDC):** [Link](https://grdc.bafg.de)  
 
-Climate Data
+</details>
 
-MACAv2-METDATA (THREDDS): Link
+<details>
+<summary><strong>Satellite and Remote Sensing Data</strong></summary>
 
-Downscaled climate data (temperature, precipitation, humidity).
+- **Landsat (USGS):** [Link](https://landsat.gsfc.nasa.gov/data/)  
+- **Sentinel-2 (ESA Copernicus):** [Link](https://sentinel.esa.int/web/sentinel/home)  
+- **Planet / Maxar (optional)**  
 
-Scenarios: RCP 4.5, RCP 8.5.
+</details>
 
-NOAA Climate Data (NCEI): Link
+<details>
+<summary><strong>Conservation and Wildlife Data</strong></summary>
 
-PRISM Climate Data: Link
+- **World Database on Protected Areas (WDPA):** [Link](https://www.protectedplanet.net/)  
+- **eBird (Cornell Lab of Ornithology):** [Link](https://ebird.org/explore)  
+- **GBIF (Global Biodiversity Information Facility):** [Link](https://www.gbif.org/)  
+- **USGS Protected Areas and Species Distributions:** [Link](https://www.usgs.gov/programs/gap-analysis-project/science/species)  
 
-GridMET: Link
+</details>
 
-DayMET: Link
+<details>
+<summary><strong>Agricultural Data</strong></summary>
 
-NASA EarthData EOSDIS: Link
+- **USDA NASS:** [Link](https://www.nass.usda.gov/Data_and_Statistics/index.php)  
+- **FAO GIEWS:** [Link](https://www.fao.org/giews/data-tools/en/)  
 
-Vegetation and Land Cover
+</details>
 
-National Land Cover Database (NLCD): Link
+<details>
+<summary><strong>Environmental Monitoring Data</strong></summary>
 
-MODIS Land Cover (MOD12): Link
+- **EPA Air Quality System (AQS):** [Link](https://www.epa.gov/aqs)  
+- **USGS BioData:** [Link](https://pubs.usgs.gov/fs/2011/3112/)  
 
-BONAP (Biota of North America Program): Link
+</details>
 
-USGS Species Viewer: Link
+<details>
+<summary><strong>Infrastructure Data</strong></summary>
 
-USFS National Grasslands: Link
+- **Homeland Infrastructure Foundation-Level Data (HIFLD):** [Link](https://www.dhs.gov/gmo/hifld)  
+- **OpenStreetMap (OSM):** [Link](https://www.openstreetmap.org/#map=5/38.01/-95.84)  
+- **Local GIS Resources:** e.g., Bureau of Indian Affairs (BIA) road layers  
 
-NDVI/EVI: Derived from MODIS or Sentinel-2 for vegetation health.
+</details>
 
-Hydrology
+<details>
+<summary><strong>Fire-related Datasets</strong></summary>
 
-USGS National Hydrography Dataset (NHDPlus HR): Link
+- **USGS LANDFIRE:** [Link](https://landfire.gov/data)  
+  - Existing Vegetation Type (EVT), Height (EVH), and Cover (EVC)  
+  - Fire Behavior Fuel Models (FBFM), Fuel Loading Models (FLM)  
+  - Disturbance (DST), Fire Regime Groups (FRG), Mean Fire Return Interval (MFRI)  
+- **Fuelcast:** [Link](https://www.fuelcast.net)  
 
-NASA GRACE (Groundwater Data): Link
+</details>
 
-USGS Water Data for the Nation: Link
+<details>
+<summary><strong>Socio-Cultural Data</strong></summary>
 
-Global Runoff Data Centre (GRDC): Link
+- **U.S. Census Bureau:** [Link](https://data.census.gov/)  
+- **Bureau of Indian Affairs (BIA) GIS:** [Link](https://www.bia.gov/gis)  
+- **Tribal and Cultural Lands:** GIS layers for culturally significant or sacred sites (with permissions)  
 
-Satellite and Remote Sensing Data
+</details>
 
-Landsat (USGS): Link
+<details>
+<summary><strong>Educational and Research Data</strong></summary>
 
-Sentinel-2 (ESA Copernicus): Link
+- **NASA EarthData:** [Link](https://earthdata.nasa.gov/)  
+- **Local Research Outputs (OLC):** Biodiversity, cultural heritage, or land management studies  
+- **Student Projects:** Integrating student-generated environmental and GIS data  
 
-Planet / Maxar (optional): High-resolution imagery for land use monitoring.
+</details>
 
-Conservation and Wildlife Data
+<details>
+<summary><strong>References and Acknowledgments</strong></summary>
 
-World Database on Protected Areas (WDPA): Link
-
-eBird (Cornell Lab of Ornithology): Link
-
-USGS Protected Areas and Species Distributions: Link
-
-Agricultural Data
-
-USDA NASS: Link
-
-FAO GIEWS: Link
-
-Environmental Monitoring Data
-
-EPA Air Quality System (AQS): Link
-
-USGS BioData: Link
-
-Infrastructure Data
-
-Homeland Infrastructure Foundation-Level Data (HIFLD): Link
-
-OpenStreetMap (OSM): Link
-
-Local GIS Resources: e.g., Bureau of Indian Affairs (BIA) road layers.
-
-Fire-related Datasets
-
-USGS LANDFIRE: Link
-
-Existing Vegetation Type (EVT), Height (EVH), and Cover (EVC)
-
-Fire Behavior Fuel Models (FBFM), Fuel Loading Models (FLM)
-
-Disturbance (DST), Fire Regime Groups (FRG), Mean Fire Return Interval (MFRI)
-
-Fuelcast: Link
-
-Socio-Cultural Data
-
-U.S. Census Bureau: Link
-
-Bureau of Indian Affairs (BIA) GIS: Link
-
-Tribal and Cultural Lands: GIS layers for culturally significant or sacred sites (with appropriate permissions).
-
-Educational and Research Data
-
-NASA EarthData: Link
-
-Local Research Outputs (OLC): Biodiversity, cultural heritage, or land management studies.
-
-Student Projects: Integrating student-generated environmental and GIS data.
-
-References and Acknowledgments
-
-This repository integrates open and public data sources with Tribal-led research and ethical data management frameworks.
+This repository integrates open and public data sources with Tribal-led research and ethical data management frameworks.  
 Please cite original data providers and respect Tribal Data Sovereignty principles when using or sharing these datasets.
+
+</details>
+
