@@ -167,8 +167,6 @@ Please cite original data providers and respect Tribal Data Sovereignty principl
 <details>
 <summary><strong>Usage and Citation</strong></summary>
 
-## Usage and Citation
-
 The datasets in this repository are intended for **research, education, and conservation purposes**. Users must follow proper attribution guidelines and respect ethical data use, particularly for Tribal and culturally sensitive data.
 
 ### Citing Datasets
