@@ -164,3 +164,34 @@ Please cite original data providers and respect Tribal Data Sovereignty principl
 
 </details>
 
+<details>
+<summary><strong>Usage and Citation</strong></summary>
+
+## Usage and Citation
+
+The datasets in this repository are intended for **research, education, and conservation purposes**. Users must follow proper attribution guidelines and respect ethical data use, particularly for Tribal and culturally sensitive data.
+
+### Citing Datasets
+- Always cite the **original data providers** for any dataset used.  
+- Include the **dataset title, author/organization, year, and URL** in any publication or report.  
+- For example, citing PAD-US could look like:  
+  > USGS Gap Analysis Project. 2025. Protected Areas Database of the United States (PAD-US). U.S. Geological Survey. [https://www.usgs.gov/programs/gap-analysis-project/science/protected-areas](https://www.usgs.gov/programs/gap-analysis-project/science/protected-areas)
+
+### Tribal Data Sovereignty
+- Some datasets represent **Tribal lands, culturally significant sites, or community data**.  
+- Users must **request permission** or follow Tribal guidance before using sensitive data, especially for **public sharing, publications, or commercial use**.  
+- Follow **Tribal Data Governance principles**, including:  
+  - Respect for Tribal ownership of data  
+  - Consultation with Tribal representatives for use of sensitive data  
+  - Following any license or use restrictions applied by the Tribe  
+
+### General Guidelines
+1. **Do not redistribute** raw data without permission.  
+2. **Attribute all sources** when using the data in visualizations, models, or reports.  
+3. **Acknowledge Oglala Lakota College (OLC) NIFA Data Cube** when using combined datasets or derived analyses.  
+4. Check dataset-specific licenses for any additional restrictions.  
+
+By following these guidelines, users ensure **ethical, responsible, and culturally respectful use** of all datasets in the OLC NIFA Data Cube.
+
+</details>
+
