@@ -1,7 +1,6 @@
 # OLC NIFA Data Cube Datasets
 
 ## Overview
-
 This repository organizes key geospatial, environmental, and socio-cultural datasets used in the Oglala Lakota College (OLC) NIFA Data Cube project.  
 These datasets support research, education, and land stewardship, including work with the Pine Ridge Reservation and surrounding regions.
 
@@ -9,8 +8,6 @@ The OLC NIFA Data Cube integrates multi-source datasets for ecological, climate,
 The project emphasizes Tribal data sovereignty, open science, and land-based education.
 
 All data are intended for research, education, and conservation purposes and should be used following proper attribution and data sharing agreements, particularly for Tribal and culturally sensitive data.
-
----
 
 <details>
 <summary><strong>Geographic and Spatial Data</strong></summary>
