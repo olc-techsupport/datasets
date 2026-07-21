@@ -120,7 +120,7 @@ All data are intended for research, education, and conservation purposes and sho
 
 - **Homeland Infrastructure Foundation-Level Data (HIFLD):** [Link](https://www.dhs.gov/gmo/hifld)  
 - **OpenStreetMap (OSM):** [Link](https://www.openstreetmap.org/#map=5/38.01/-95.84)  
-- **Local GIS Resources:** e.g., Bureau of Indian Affairs (BIA) road layers  
+- **Local GIS Resources:** ex. IHS wells layer  
 
 </details>
 
