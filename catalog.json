@@ -1,0 +1,513 @@
+[
+  {
+    "id": "usgs-protected-areas-database-pad-us",
+    "name": "USGS Protected Areas Database (PAD-US)",
+    "topics": [
+      "Geographic and Spatial Data"
+    ],
+    "url": "https://www.usgs.gov/programs/gap-analysis-project/science/protected-areas",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "openstreetmap-osm",
+    "name": "OpenStreetMap (OSM)",
+    "topics": [
+      "Geographic and Spatial Data",
+      "Infrastructure Data"
+    ],
+    "url": "https://www.openstreetmap.org/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "boundary-data",
+    "name": "Boundary Data",
+    "topics": [
+      "Geographic and Spatial Data"
+    ],
+    "url": null,
+    "status": "candidate",
+    "kind": "local / governed resource"
+  },
+  {
+    "id": "polaris-soil-dataset",
+    "name": "POLARIS Soil Dataset",
+    "topics": [
+      "Geology and Soils Data"
+    ],
+    "url": "https://daac.ornl.gov/get_data/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "usda-nrcs-web-soil-survey",
+    "name": "USDA NRCS Web Soil Survey",
+    "topics": [
+      "Geology and Soils Data"
+    ],
+    "url": "https://websoilsurvey.sc.egov.usda.gov/App/HomePage.htm",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "ssurgo-downloader-nrcs",
+    "name": "SSURGO Downloader (NRCS)",
+    "topics": [
+      "Geology and Soils Data"
+    ],
+    "url": "https://www.arcgis.com/apps/View/index.html?appid=cdc49bd63ea54dd2977f3f2853e07fff",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "soilgrids-isric",
+    "name": "SoilGrids (ISRIC)",
+    "topics": [
+      "Geology and Soils Data"
+    ],
+    "url": "https://www.isric.org/explore/soilgrids",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "south-dakota-geological-survey-sdgs",
+    "name": "South Dakota Geological Survey (SDGS)",
+    "topics": [
+      "Geology and Soils Data"
+    ],
+    "url": "https://www.sdgs.usd.edu/publications/default.aspx",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "usgs-national-elevation-dataset-ned",
+    "name": "USGS National Elevation Dataset (NED)",
+    "topics": [
+      "Elevation and Topography"
+    ],
+    "url": "https://viewer.nationalmap.gov/basic/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "nasa-srtm-shuttle-radar-topography-mission",
+    "name": "NASA SRTM (Shuttle Radar Topography Mission)",
+    "topics": [
+      "Elevation and Topography"
+    ],
+    "url": "https://www.earthdata.nasa.gov/data/instruments/srtm",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "macav2-metdata-thredds",
+    "name": "MACAv2-METDATA (THREDDS)",
+    "topics": [
+      "Climate Data"
+    ],
+    "url": "https://climate.northwestknowledge.net/MACA/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "noaa-climate-data-ncei",
+    "name": "NOAA Climate Data (NCEI)",
+    "topics": [
+      "Climate Data"
+    ],
+    "url": "https://www.ncei.noaa.gov/",
+    "status": "candidate",
+    "kind": "portal / resource"
+  },
+  {
+    "id": "prism",
+    "name": "PRISM Climate Data",
+    "topics": [
+      "Climate Data"
+    ],
+    "url": "https://prism.oregonstate.edu/",
+    "status": "documented",
+    "kind": "product / product family"
+  },
+  {
+    "id": "gridmet",
+    "name": "GridMET",
+    "topics": [
+      "Climate Data"
+    ],
+    "url": "https://www.climatologylab.org/gridmet.html",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "daymet",
+    "name": "DayMET",
+    "topics": [
+      "Climate Data"
+    ],
+    "url": "https://daymet.ornl.gov/single-pixel/",
+    "status": "access tested",
+    "kind": "product / product family"
+  },
+  {
+    "id": "nasa-earthdata-eosdis",
+    "name": "NASA EarthData EOSDIS",
+    "topics": [
+      "Climate Data"
+    ],
+    "url": "https://www.earthdata.nasa.gov/about/esdis/eosdis",
+    "status": "candidate",
+    "kind": "portal / resource"
+  },
+  {
+    "id": "nasa-global-climate-change-vital-signs-of-the-planet",
+    "name": "NASA Global Climate Change - Vital Signs of the Planet",
+    "topics": [
+      "Climate Data"
+    ],
+    "url": "https://climate.nasa.gov/",
+    "status": "candidate",
+    "kind": "portal / resource"
+  },
+  {
+    "id": "esa-climate-change-initiative-esa-cci",
+    "name": "ESA Climate Change Initiative (ESA CCI)",
+    "topics": [
+      "Climate Data"
+    ],
+    "url": "https://climate.esa.int/en/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "national-land-cover-database-nlcd",
+    "name": "National Land Cover Database (NLCD)",
+    "topics": [
+      "Vegetation and Land Cover"
+    ],
+    "url": "https://www.mrlc.gov/data",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "modis-land-cover-mod12",
+    "name": "MODIS Land Cover (MOD12)",
+    "topics": [
+      "Vegetation and Land Cover"
+    ],
+    "url": "https://modis.gsfc.nasa.gov/data/dataprod/mod12.php",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "bonap-biota-of-north-america-program",
+    "name": "BONAP (Biota of North America Program)",
+    "topics": [
+      "Vegetation and Land Cover"
+    ],
+    "url": "http://bonap.net/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "usgs-species-viewer",
+    "name": "USGS Species Viewer",
+    "topics": [
+      "Vegetation and Land Cover"
+    ],
+    "url": "https://www.usgs.gov/programs/gap-analysis-project/science/species",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "usfs-national-grasslands",
+    "name": "USFS National Grasslands",
+    "topics": [
+      "Vegetation and Land Cover"
+    ],
+    "url": "https://www.fs.usda.gov/grasslands/",
+    "status": "candidate",
+    "kind": "portal / resource"
+  },
+  {
+    "id": "ndvi-evi",
+    "name": "NDVI/EVI",
+    "topics": [
+      "Vegetation and Land Cover"
+    ],
+    "url": null,
+    "status": "candidate",
+    "kind": "derived product"
+  },
+  {
+    "id": "usgs-national-hydrography-dataset-nhdplus-hr",
+    "name": "USGS National Hydrography Dataset (NHDPlus HR)",
+    "topics": [
+      "Hydrology"
+    ],
+    "url": "https://www.usgs.gov/core-science-systems/ngp/national-hydrography",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "nasa-grace-groundwater-data",
+    "name": "NASA GRACE (Groundwater Data)",
+    "topics": [
+      "Hydrology"
+    ],
+    "url": "https://grace.jpl.nasa.gov/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "usgs-water",
+    "name": "USGS Water Data for the Nation",
+    "topics": [
+      "Hydrology"
+    ],
+    "url": "https://api.waterdata.usgs.gov/",
+    "status": "documented",
+    "kind": "product / product family"
+  },
+  {
+    "id": "global-runoff-data-centre-grdc",
+    "name": "Global Runoff Data Centre (GRDC)",
+    "topics": [
+      "Hydrology"
+    ],
+    "url": "https://grdc.bafg.de",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "landsat-usgs",
+    "name": "Landsat (USGS)",
+    "topics": [
+      "Satellite and Remote Sensing Data"
+    ],
+    "url": "https://landsat.gsfc.nasa.gov/data/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "sentinel-2-esa-copernicus",
+    "name": "Sentinel-2 (ESA Copernicus)",
+    "topics": [
+      "Satellite and Remote Sensing Data"
+    ],
+    "url": "https://sentinel.esa.int/web/sentinel/home",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "planet-maxar-optional",
+    "name": "Planet / Maxar (optional)",
+    "topics": [
+      "Satellite and Remote Sensing Data"
+    ],
+    "url": null,
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "world-database-on-protected-areas-wdpa",
+    "name": "World Database on Protected Areas (WDPA)",
+    "topics": [
+      "Conservation and Wildlife Data"
+    ],
+    "url": "https://www.protectedplanet.net/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "ebird-cornell-lab-of-ornithology",
+    "name": "eBird (Cornell Lab of Ornithology)",
+    "topics": [
+      "Conservation and Wildlife Data"
+    ],
+    "url": "https://ebird.org/explore",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "gbif-global-biodiversity-information-facility",
+    "name": "GBIF (Global Biodiversity Information Facility)",
+    "topics": [
+      "Conservation and Wildlife Data"
+    ],
+    "url": "https://www.gbif.org/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "usgs-protected-areas-and-species-distributions",
+    "name": "USGS Protected Areas and Species Distributions",
+    "topics": [
+      "Conservation and Wildlife Data"
+    ],
+    "url": "https://www.usgs.gov/programs/gap-analysis-project/science/species",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "usda-nass",
+    "name": "USDA NASS",
+    "topics": [
+      "Agricultural Data"
+    ],
+    "url": "https://www.nass.usda.gov/Data_and_Statistics/index.php",
+    "status": "candidate",
+    "kind": "portal / resource"
+  },
+  {
+    "id": "fao-giews",
+    "name": "FAO GIEWS",
+    "topics": [
+      "Agricultural Data"
+    ],
+    "url": "https://www.fao.org/giews/data-tools/en/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "epa-air-quality-system-aqs",
+    "name": "EPA Air Quality System (AQS)",
+    "topics": [
+      "Environmental Monitoring Data"
+    ],
+    "url": "https://www.epa.gov/aqs",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "usgs-biodata",
+    "name": "USGS BioData",
+    "topics": [
+      "Environmental Monitoring Data"
+    ],
+    "url": "https://pubs.usgs.gov/fs/2011/3112/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "homeland-infrastructure-foundation-level-data-hifld",
+    "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
+    "topics": [
+      "Infrastructure Data"
+    ],
+    "url": "https://www.dhs.gov/gmo/hifld",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "local-gis-resources",
+    "name": "Local GIS Resources",
+    "topics": [
+      "Infrastructure Data"
+    ],
+    "url": null,
+    "status": "candidate",
+    "kind": "local / governed resource"
+  },
+  {
+    "id": "usgs-landfire",
+    "name": "USGS LANDFIRE",
+    "topics": [
+      "Fire-related Datasets"
+    ],
+    "url": "https://landfire.gov/data",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "fuelcast",
+    "name": "Fuelcast",
+    "topics": [
+      "Fire-related Datasets"
+    ],
+    "url": "https://www.fuelcast.net",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "u-s-census-bureau",
+    "name": "U.S. Census Bureau",
+    "topics": [
+      "Socio-Cultural Data"
+    ],
+    "url": "https://data.census.gov/",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "bureau-of-indian-affairs-bia-gis",
+    "name": "Bureau of Indian Affairs (BIA) GIS",
+    "topics": [
+      "Socio-Cultural Data"
+    ],
+    "url": "https://www.bia.gov/gis",
+    "status": "candidate",
+    "kind": "source candidate"
+  },
+  {
+    "id": "tribal-and-cultural-lands",
+    "name": "Tribal and Cultural Lands",
+    "topics": [
+      "Socio-Cultural Data"
+    ],
+    "url": null,
+    "status": "candidate",
+    "kind": "local / governed resource"
+  },
+  {
+    "id": "nasa-earthdata",
+    "name": "NASA EarthData",
+    "topics": [
+      "Educational and Research Data"
+    ],
+    "url": "https://earthdata.nasa.gov/",
+    "status": "candidate",
+    "kind": "portal / resource"
+  },
+  {
+    "id": "local-research-outputs-olc",
+    "name": "Local Research Outputs (OLC)",
+    "topics": [
+      "Educational and Research Data"
+    ],
+    "url": null,
+    "status": "candidate",
+    "kind": "local / governed resource"
+  },
+  {
+    "id": "student-projects",
+    "name": "Student Projects",
+    "topics": [
+      "Educational and Research Data"
+    ],
+    "url": null,
+    "status": "candidate",
+    "kind": "local / governed resource"
+  },
+  {
+    "id": "cdl",
+    "name": "USDA Cropland Data Layer (CDL)",
+    "topics": [
+      "Agricultural Data"
+    ],
+    "url": "https://www.nass.usda.gov/Research_and_Science/Cropland/SARS1a.php",
+    "status": "documented",
+    "kind": "product / product family"
+  },
+  {
+    "id": "smap",
+    "name": "SMAP soil moisture products",
+    "topics": [
+      "Hydrology"
+    ],
+    "url": "https://nsidc.org/data/spl4smgp/versions/8",
+    "status": "documented",
+    "kind": "product / product family"
+  }
+]

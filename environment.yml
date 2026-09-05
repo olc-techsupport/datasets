@@ -1,0 +1,5 @@
+name: olc-geospatial-data
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
