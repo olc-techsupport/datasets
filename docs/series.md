@@ -1,7 +1,5 @@
 # Proposed series mapping
 
-These are planning groups inferred from the inventories, not official series titles or confirmed dataset selections.
-
 | Proposed series | Starting sources | Purpose |
 | --- | --- | --- |
 | Water monitoring | USGS Water Data, hydrography, geology/soils, Daymet | Station observations and watershed/weather context |
