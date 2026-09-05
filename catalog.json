@@ -6,8 +6,26 @@
       "Geographic and Spatial Data"
     ],
     "url": "https://www.usgs.gov/programs/gap-analysis-project/science/protected-areas",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Record source vintage and extraction timestamp; no uniform observation period",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Snapshot/revision dates for the selected layer",
+      "native_spatial_resolution": "Vector geometry; record source mapping scale and positional accuracy for the selected layer",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "openstreetmap-osm",
@@ -17,8 +35,27 @@
       "Infrastructure Data"
     ],
     "url": "https://www.openstreetmap.org/",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Record source vintage and extraction timestamp; no uniform observation period",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Snapshot/revision dates for the selected layer",
+      "native_spatial_resolution": "Vector geometry; record source mapping scale and positional accuracy for the selected layer",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "product_notes": "Use extract timestamp and feature version/history where relevant; edit timestamps do not establish when a feature was observed on the ground.",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "boundary-data",
@@ -27,8 +64,36 @@
       "Geographic and Spatial Data"
     ],
     "url": null,
-    "status": "candidate",
-    "kind": "local / governed resource"
+    "status": "implemented",
+    "kind": "local / governed resource",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "local code reviewed",
+    "metadata": {
+      "product_version": "Census TIGER/Line 2023 AIANNH in the tutorial",
+      "geographic_coverage": "US AIANNH source filtered to Pine Ridge",
+      "available_time_coverage": "Annual boundary vintage; reviewed code selects 2023",
+      "project_time_coverage": "TIGER/Line 2023 vintage; not a measurement time series",
+      "temporal_interval": "Boundary snapshot",
+      "native_spatial_resolution": "Vector polygons; positional accuracy is not pixel resolution",
+      "project_output_resolution": "Dissolved polygon GeoJSON, EPSG:4326; no pixel size",
+      "source_format": "TIGER/Line zipped Shapefile",
+      "project_output_format": "GeoJSON",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "product_notes": "Statistical boundary representation must not be equated with an authoritative jurisdictional determination.",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": [
+      {
+        "repository": "https://github.com/olc-techsupport/data_cube_tutorial",
+        "file": "src/cube_utils.py",
+        "reviewed_commit": "a406384bde03ffd16e392c422ffdc6b9b4fd4dd4",
+        "url": "https://github.com/olc-techsupport/data_cube_tutorial/blob/a406384bde03ffd16e392c422ffdc6b9b4fd4dd4/src/cube_utils.py",
+        "detail": "load_pine_ridge_boundary uses Census TIGER2023 AIANNH, filtered to Pine Ridge. This is not evidence of a BIA layer.",
+        "evidence": "Local code inspected; pipeline not executed in this review"
+      }
+    ]
   },
   {
     "id": "polaris-soil-dataset",
@@ -38,7 +103,25 @@
     ],
     "url": "https://daac.ornl.gov/get_data/",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "usda-nrcs-web-soil-survey",
@@ -47,8 +130,37 @@
       "Geology and Soils Data"
     ],
     "url": "https://websoilsurvey.sc.egov.usda.gov/App/HomePage.htm",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "local code reviewed",
+    "metadata": {
+      "product_version": "SSURGO soil map units and component/horizon tables; identify survey-area versions",
+      "geographic_coverage": "US survey areas with available coverage",
+      "available_time_coverage": "Survey publication/update dates vary by area; extraction date recorded separately",
+      "project_time_coverage": "Survey-area vintages and retrieval dates; no fixed annual period",
+      "temporal_interval": "Survey snapshots and revisions; not an annual soil measurement series",
+      "native_spatial_resolution": "Vector mapping scales commonly 1:12,000 to 1:63,360; not a fixed pixel size",
+      "project_output_resolution": "Map-unit/tabular soil data; output depends on workflow",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://www.nrcs.usda.gov/resources/data-and-reports/soil-survey-geographic-database-ssurgo",
+      "product_notes": "Web Soil Survey and the downloader are access routes. Keep map-unit polygons, tabular properties and any rasterized project output distinct; gSSURGO requires its own grid specification.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications"
+    },
+    "implementations": [
+      {
+        "repository": "https://github.com/olc-techsupport/Geology-soils-geology",
+        "file": "src/ssurgo.py",
+        "reviewed_commit": "7d898555fbdd4f5f53caa53adcfbe52df04394e5",
+        "url": "https://github.com/olc-techsupport/Geology-soils-geology/blob/7d898555fbdd4f5f53caa53adcfbe52df04394e5/src/ssurgo.py",
+        "detail": "SSURGO handling exists in the soils/geology repository; runtime input survey version must accompany each result.",
+        "evidence": "Local code inspected; pipeline not executed in this review"
+      }
+    ]
   },
   {
     "id": "ssurgo-downloader-nrcs",
@@ -57,8 +169,28 @@
       "Geology and Soils Data"
     ],
     "url": "https://www.arcgis.com/apps/View/index.html?appid=cdc49bd63ea54dd2977f3f2853e07fff",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "documented",
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "SSURGO soil map units and component/horizon tables; identify survey-area versions",
+      "geographic_coverage": "US survey areas with available coverage",
+      "available_time_coverage": "Survey publication/update dates vary by area; extraction date recorded separately",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Survey snapshots and revisions; not an annual soil measurement series",
+      "native_spatial_resolution": "Vector mapping scales commonly 1:12,000 to 1:63,360; not a fixed pixel size",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://www.nrcs.usda.gov/resources/data-and-reports/soil-survey-geographic-database-ssurgo",
+      "product_notes": "Web Soil Survey and the downloader are access routes. Keep map-unit polygons, tabular properties and any rasterized project output distinct; gSSURGO requires its own grid specification.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications"
+    },
+    "implementations": []
   },
   {
     "id": "soilgrids-isric",
@@ -67,8 +199,28 @@
       "Geology and Soils Data"
     ],
     "url": "https://www.isric.org/explore/soilgrids",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "documented",
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "SoilGrids250m version 2.0",
+      "geographic_coverage": "Global",
+      "available_time_coverage": "Modeled soil-property release; no annual observation series",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Static modeled layers by release and depth",
+      "native_spatial_resolution": "250 m; depths 0–5, 5–15, 15–30, 30–60, 60–100 and 100–200 cm",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://docs.isric.org/globaldata/soilgrids/SoilGrids_faqs.html",
+      "product_notes": "Record property, depth, statistic/quantile and units. Input observation dates are not a uniform map observation year.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications"
+    },
+    "implementations": []
   },
   {
     "id": "south-dakota-geological-survey-sdgs",
@@ -77,8 +229,27 @@
       "Geology and Soils Data"
     ],
     "url": "https://www.sdgs.usd.edu/publications/default.aspx",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Record source vintage and extraction timestamp; no uniform observation period",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Snapshot/revision dates for the selected layer",
+      "native_spatial_resolution": "Vector geometry; record source mapping scale and positional accuracy for the selected layer",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "product_notes": "Record map publication/revision date, mapping scale and unit ages separately. The reviewed soils repository lists USGS state-geology data; that does not establish which SDGS product was implemented.",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "usgs-national-elevation-dataset-ned",
@@ -87,8 +258,26 @@
       "Elevation and Topography"
     ],
     "url": "https://viewer.nationalmap.gov/basic/",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "nasa-srtm-shuttle-radar-topography-mission",
@@ -97,8 +286,37 @@
       "Elevation and Topography"
     ],
     "url": "https://www.earthdata.nasa.gov/data/instruments/srtm",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "local code reviewed",
+    "metadata": {
+      "product_version": "SRTM 1 Arc-Second Global; local loader reads AWS Skadi HGT tiles",
+      "geographic_coverage": "Approximately 60 N to 56 S",
+      "available_time_coverage": "Acquisition February 11–22, 2000; record distribution/reprocessing version separately",
+      "project_time_coverage": "February 2000 acquisition; downloaded tile revision not recorded here",
+      "temporal_interval": "Static elevation surface",
+      "native_spatial_resolution": "1 arc-second (approximately 30 m); 3 arc-second products are separate",
+      "project_output_resolution": "Loader mosaic EPSG:4326 at 1 arc-second; downstream target 30 m EPSG:5070",
+      "source_format": "Compressed HGT tiles in reviewed loader",
+      "project_output_format": "GeoTIFF mosaic",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://doi.org/10.5066/F7PR7TFT",
+      "product_notes": "Loader enforces 3601 × 3601 samples per one-degree tile. Its constants/provenance comments mentioning GL3/90 m disagree with the executable loader; confirm cached raster metadata before analysis.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications"
+    },
+    "implementations": [
+      {
+        "repository": "https://github.com/olc-techsupport/pine_ridge_bison_habitat",
+        "file": "src/loaders.py",
+        "reviewed_commit": "150714f7bbe6cab019a3348998e629ec08d76a79",
+        "url": "https://github.com/olc-techsupport/pine_ridge_bison_habitat/blob/150714f7bbe6cab019a3348998e629ec08d76a79/src/loaders.py",
+        "detail": "load_srtm_dem validates 3601-sample tiles and 1/3600-degree spacing.",
+        "evidence": "Local code inspected; pipeline not executed in this review"
+      }
+    ]
   },
   {
     "id": "macav2-metdata-thredds",
@@ -107,8 +325,37 @@
       "Climate Data"
     ],
     "url": "https://climate.northwestknowledge.net/MACA/",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "local code reviewed",
+    "metadata": {
+      "product_version": "MACAv2-METDATA; CMIP5 model, realization and RCP must accompany each selection",
+      "geographic_coverage": "CONUS",
+      "available_time_coverage": "Historical 1950–2005; projection aggregates in reviewed code 2006–2099",
+      "project_time_coverage": "Loader: 2006–2099; habitat planning document describes 2040–2060",
+      "temporal_interval": "Daily products and monthly aggregates; reviewed bison loader uses monthly",
+      "native_spatial_resolution": "1/24 degree (approximately 4 km)",
+      "project_output_resolution": "Nearest grid-cell monthly CSV; no new climate spatial detail from habitat output grid",
+      "source_format": "Monthly NetCDF via OPeNDAP",
+      "project_output_format": "Point time-series CSV",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://www.climatologylab.org/datasets.html",
+      "product_notes": "Historical simulations and future projections are separate from observed weather. Preserve model calendar and scenario; exact periods are also evidenced by the loader URL.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications"
+    },
+    "implementations": [
+      {
+        "repository": "https://github.com/olc-techsupport/pine_ridge_bison_habitat",
+        "file": "src/loaders.py",
+        "reviewed_commit": "150714f7bbe6cab019a3348998e629ec08d76a79",
+        "url": "https://github.com/olc-techsupport/pine_ridge_bison_habitat/blob/150714f7bbe6cab019a3348998e629ec08d76a79/src/loaders.py",
+        "detail": "fetch_maca_monthly uses BNU-ESM by default, r1i1p1, supplied RCP, monthly 2006_2099_CONUS aggregates.",
+        "evidence": "Local code inspected; pipeline not executed in this review"
+      }
+    ]
   },
   {
     "id": "noaa-climate-data-ncei",
@@ -118,7 +365,25 @@
     ],
     "url": "https://www.ncei.noaa.gov/",
     "status": "candidate",
-    "kind": "portal / resource"
+    "kind": "portal / resource",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "prism",
@@ -128,7 +393,28 @@
     ],
     "url": "https://prism.oregonstate.edu/",
     "status": "documented",
-    "kind": "product / product family"
+    "kind": "product / product family",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "PRISM CONUS precipitation/temperature time series; select resolution and release",
+      "geographic_coverage": "CONUS for this selection",
+      "available_time_coverage": "Daily/monthly periods vary by product; exact start/end not newly checked",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Daily or monthly; 30-year normals are a separate product",
+      "native_spatial_resolution": "Separate 800 m and 4 km products",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://prism.oregonstate.edu/formats/",
+      "product_notes": "Source ZIP contains COG GeoTIFF and ancillary metadata. Prior product notes reviewed 2026-09-05; no new download.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications",
+      "prior_format_notes": "Current grid downloads: ZIP containing COG GeoTIFF and ancillary metadata. NetCDF/Zarr are possible conversions, not implemented outputs here."
+    },
+    "implementations": []
   },
   {
     "id": "gridmet",
@@ -137,8 +423,37 @@
       "Climate Data"
     ],
     "url": "https://www.climatologylab.org/gridmet.html",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "local code reviewed",
+    "metadata": {
+      "product_version": "gridMET surface meteorology; release not pinned in loader",
+      "geographic_coverage": "CONUS; check variable-specific extent",
+      "available_time_coverage": "1979 onward; latest delivered date must be read from returned data",
+      "project_time_coverage": "Caller supplies start_year/end_year; no universal project period",
+      "temporal_interval": "Daily for primary meteorological variables",
+      "native_spatial_resolution": "1/24 degree (approximately 4 km)",
+      "project_output_resolution": "Point CSV from native grid; no spatial raster output established",
+      "source_format": "NetCDF via OPeNDAP in reviewed helper",
+      "project_output_format": "Point time-series CSV",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://www.climatologylab.org/gridmet.html",
+      "product_notes": "Daily operational updates can lag. Angular cell size is not a constant distance in both directions.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications"
+    },
+    "implementations": [
+      {
+        "repository": "https://github.com/olc-techsupport/data_cube_tutorial",
+        "file": "src/cube_utils.py",
+        "reviewed_commit": "a406384bde03ffd16e392c422ffdc6b9b4fd4dd4",
+        "url": "https://github.com/olc-techsupport/data_cube_tutorial/blob/a406384bde03ffd16e392c422ffdc6b9b4fd4dd4/src/cube_utils.py",
+        "detail": "fetch_gridmet_point takes start_year/end_year and selects a nearest grid cell.",
+        "evidence": "Local code inspected; pipeline not executed in this review"
+      }
+    ]
   },
   {
     "id": "daymet",
@@ -148,7 +463,33 @@
     ],
     "url": "https://daymet.ornl.gov/single-pixel/",
     "status": "access tested",
-    "kind": "product / product family"
+    "kind": "product / product family",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "tested example in this repository",
+    "metadata": {
+      "product_version": "Daymet Version 4 R1, DOI 10.3334/ORNLDAAC/2129",
+      "geographic_coverage": "North America for this record; other regional archives differ",
+      "available_time_coverage": "North America from 1980; latest returned date recorded per request",
+      "project_time_coverage": "Example: 2020-01-01 through 2020-01-31 at 43.03, -102.56",
+      "temporal_interval": "Daily; leap day retained, December 31 omitted in leap years",
+      "native_spatial_resolution": "1 km grid; sample is one grid-cell time series",
+      "project_output_resolution": "One native grid-cell sample; no resampling",
+      "source_format": "CSV with provider metadata; gridded products use NetCDF",
+      "project_output_format": "Unmodified CSV and provenance JSON",
+      "availability_checked": "2026-09-05; bounded sample passed (prior validation)",
+      "latest_observation_confirmed": "2020-01-31 within the sample; service-wide latest date not checked",
+      "provider_reference": "https://daymet.ornl.gov/overview",
+      "product_notes": "Live sample checked 2026-09-05. Endpoint URL is not version-pinned; response citation and checksum are retained.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications",
+      "prior_format_notes": "Single-pixel service: CSV with metadata preamble. Gridded delivery: NetCDF; Zarr would be a derived project output."
+    },
+    "implementations": [
+      {
+        "url": "../examples/daymet_sample.py",
+        "detail": "Bounded standard-library sample; see docs/validation.md"
+      }
+    ]
   },
   {
     "id": "nasa-earthdata-eosdis",
@@ -158,7 +499,25 @@
     ],
     "url": "https://www.earthdata.nasa.gov/about/esdis/eosdis",
     "status": "candidate",
-    "kind": "portal / resource"
+    "kind": "portal / resource",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "nasa-global-climate-change-vital-signs-of-the-planet",
@@ -168,7 +527,25 @@
     ],
     "url": "https://climate.nasa.gov/",
     "status": "candidate",
-    "kind": "portal / resource"
+    "kind": "portal / resource",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "esa-climate-change-initiative-esa-cci",
@@ -178,7 +555,25 @@
     ],
     "url": "https://climate.esa.int/en/",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "national-land-cover-database-nlcd",
@@ -187,8 +582,37 @@
       "Vegetation and Land Cover"
     ],
     "url": "https://www.mrlc.gov/data",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "local code reviewed",
+    "metadata": {
+      "product_version": "NLCD 2021 Land Cover L48 in bison series; Annual NLCD is a separate product option",
+      "geographic_coverage": "CONUS for reviewed L48 product",
+      "available_time_coverage": "Implemented snapshot: 2021. Annual NLCD initially spans 1985–2023; later releases require their own endpoint/version check",
+      "project_time_coverage": "2021 snapshot",
+      "temporal_interval": "Legacy selected years; Annual NLCD yearly",
+      "native_spatial_resolution": "30 m categorical raster",
+      "project_output_resolution": "Source GeoTIFF; downstream habitat target is 30 m EPSG:5070 (constants.py)",
+      "source_format": "GeoTIFF via WCS in reviewed loader",
+      "project_output_format": "GeoTIFF subset and downstream habitat outputs",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://www.usgs.gov/centers/eros/science/about-annual-nlcd",
+      "product_notes": "Do not infer an annual series from the legacy 2021 endpoint. Preserve class legend and categorical resampling method.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications"
+    },
+    "implementations": [
+      {
+        "repository": "https://github.com/olc-techsupport/pine_ridge_bison_habitat",
+        "file": "src/loaders.py",
+        "reviewed_commit": "150714f7bbe6cab019a3348998e629ec08d76a79",
+        "url": "https://github.com/olc-techsupport/pine_ridge_bison_habitat/blob/150714f7bbe6cab019a3348998e629ec08d76a79/src/loaders.py",
+        "detail": "load_nlcd_bbox requests NLCD_2021_Land_Cover_L48.",
+        "evidence": "Local code inspected; pipeline not executed in this review"
+      }
+    ]
   },
   {
     "id": "modis-land-cover-mod12",
@@ -198,7 +622,25 @@
     ],
     "url": "https://modis.gsfc.nasa.gov/data/dataprod/mod12.php",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "bonap-biota-of-north-america-program",
@@ -208,7 +650,25 @@
     ],
     "url": "http://bonap.net/",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "usgs-species-viewer",
@@ -217,8 +677,26 @@
       "Vegetation and Land Cover"
     ],
     "url": "https://www.usgs.gov/programs/gap-analysis-project/science/species",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "usfs-national-grasslands",
@@ -228,7 +706,25 @@
     ],
     "url": "https://www.fs.usda.gov/grasslands/",
     "status": "candidate",
-    "kind": "portal / resource"
+    "kind": "portal / resource",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "ndvi-evi",
@@ -237,8 +733,37 @@
       "Vegetation and Land Cover"
     ],
     "url": null,
-    "status": "candidate",
-    "kind": "derived product"
+    "status": "implemented",
+    "kind": "derived product",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "local code reviewed",
+    "metadata": {
+      "product_version": "MOD13Q1 NDVI in reviewed code; NASA product reference V061, API code does not pin collection version",
+      "geographic_coverage": "Global product, project point/subset requests",
+      "available_time_coverage": "Terra MODIS era from 2000; reviewed bison settings 2000–2023",
+      "project_time_coverage": "Configured 2000–2023; actual returned coverage not audited",
+      "temporal_interval": "16-day composites for MOD13Q1; seasonal/yearly summaries are derived",
+      "native_spatial_resolution": "250 m MOD13Q1; other NDVI/EVI sources have different grids",
+      "project_output_resolution": "Source 250 m composites; downstream 30 m habitat grid does not increase NDVI information resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://doi.org/10.5067/MODIS/MOD13Q1.061",
+      "product_notes": "Reviewed code selects 250m_16_days_NDVI, scale 0.0001. This supports NDVI implementation, not an EVI implementation claim; retain QA and actual composite dates.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications"
+    },
+    "implementations": [
+      {
+        "repository": "https://github.com/olc-techsupport/pine_ridge_bison_habitat",
+        "file": "src/constants.py",
+        "reviewed_commit": "150714f7bbe6cab019a3348998e629ec08d76a79",
+        "url": "https://github.com/olc-techsupport/pine_ridge_bison_habitat/blob/150714f7bbe6cab019a3348998e629ec08d76a79/src/constants.py",
+        "detail": "MOD13Q1 / 250m_16_days_NDVI; MODIS_START_YEAR=2000, MODIS_END_YEAR=2023; growing months May–September.",
+        "evidence": "Local code inspected; pipeline not executed in this review"
+      }
+    ]
   },
   {
     "id": "usgs-national-hydrography-dataset-nhdplus-hr",
@@ -247,8 +772,26 @@
       "Hydrology"
     ],
     "url": "https://www.usgs.gov/core-science-systems/ngp/national-hydrography",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Record source vintage and extraction timestamp; no uniform observation period",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Snapshot/revision dates for the selected layer",
+      "native_spatial_resolution": "Vector geometry; record source mapping scale and positional accuracy for the selected layer",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "nasa-grace-groundwater-data",
@@ -258,7 +801,25 @@
     ],
     "url": "https://grace.jpl.nasa.gov/",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "usgs-water",
@@ -267,8 +828,46 @@
       "Hydrology"
     ],
     "url": "https://api.waterdata.usgs.gov/",
-    "status": "documented",
-    "kind": "product / product family"
+    "status": "implemented",
+    "kind": "product / product family",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "local code reviewed",
+    "metadata": {
+      "product_version": "USGS modern Water Data API collections; station, parameter and statistic define a series",
+      "geographic_coverage": "US monitoring network; project selects Tribal-region sites",
+      "available_time_coverage": "Station/parameter specific; report actual returned minimum/maximum separately from request bounds",
+      "project_time_coverage": "Configured analysis 2000–2024; groundwater loader default 1980 onward; actual site coverage varies",
+      "temporal_interval": "Continuous/daily series or irregular field measurements, depending on collection",
+      "native_spatial_resolution": "Monitoring-location points; no raster cell size",
+      "project_output_resolution": "Point observations/time-series tables; no native raster resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://api.waterdata.usgs.gov/",
+      "product_notes": "Retain units, qualifiers and missing intervals. A configured analysis period does not prove uninterrupted station coverage.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications",
+      "prior_format_notes": "OGC responses: GeoJSON/JSON. Parquet time series and separate site GeoJSON would be project outputs; no conversion pipeline is provided here."
+    },
+    "implementations": [
+      {
+        "repository": "https://github.com/daearconsulting/tribal_water_monitoring",
+        "file": "config/config.yaml",
+        "reviewed_commit": "54d191e189c26260ca93b300966333dd88e696d4",
+        "url": "https://github.com/daearconsulting/tribal_water_monitoring/blob/54d191e189c26260ca93b300966333dd88e696d4/config/config.yaml",
+        "detail": "Analysis years 2000–2024; base period 2000–2020. Groundwater loader separately defaults to 1980 onward.",
+        "evidence": "Local code inspected; pipeline not executed in this review"
+      },
+      {
+        "repository": "https://github.com/daearconsulting/tribal_water_monitoring",
+        "file": "src/loaders.py",
+        "reviewed_commit": "54d191e189c26260ca93b300966333dd88e696d4",
+        "url": "https://github.com/daearconsulting/tribal_water_monitoring/blob/54d191e189c26260ca93b300966333dd88e696d4/src/loaders.py",
+        "detail": "load_usgs_groundwater_levels defaults to 1980-01-01; field-measurements query is open-ended.",
+        "evidence": "Local code inspected; pipeline not executed in this review"
+      }
+    ]
   },
   {
     "id": "global-runoff-data-centre-grdc",
@@ -278,7 +877,25 @@
     ],
     "url": "https://grdc.bafg.de",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "landsat-usgs",
@@ -287,8 +904,28 @@
       "Satellite and Remote Sensing Data"
     ],
     "url": "https://landsat.gsfc.nasa.gov/data/",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "Landsat Collection 2 Level-2 surface reflectance is the documented product option; series collection still to be linked",
+      "geographic_coverage": "Global scene archive",
+      "available_time_coverage": "Landsat 4–9 surface-reflectance archive from 1982 onward; mission/scene availability varies",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Scene acquisitions; record actual dates and composite window",
+      "native_spatial_resolution": "30 m surface reflectance; other Landsat products/bands differ",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://www.usgs.gov/landsat-missions/landsat-surface-reflectance",
+      "product_notes": "An export grid does not establish sensor resolution. Record sensor, QA mask, scaling and scene count after cloud filtering.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications"
+    },
+    "implementations": []
   },
   {
     "id": "sentinel-2-esa-copernicus",
@@ -297,8 +934,28 @@
       "Satellite and Remote Sensing Data"
     ],
     "url": "https://sentinel.esa.int/web/sentinel/home",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "Sentinel-2 MSI; distinguish Level-1C, Level-2A and processing baseline",
+      "geographic_coverage": "Mission land/coastal coverage; select exact collection",
+      "available_time_coverage": "Mission archive from 2015; collection and regional availability depend on delivery",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Acquisitions; nominal dual-satellite revisit 5 days, not cloud-free observation frequency",
+      "native_spatial_resolution": "10 m, 20 m or 60 m depending on band",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://sentiwiki.copernicus.eu/web/s2-mission",
+      "product_notes": "Specify bands and native grids separately from resampled output. Collection-1 reprocessed L1C/L2A coverage is described in https://sentiwiki.copernicus.eu/web/s2-products.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications"
+    },
+    "implementations": []
   },
   {
     "id": "planet-maxar-optional",
@@ -308,7 +965,25 @@
     ],
     "url": null,
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "world-database-on-protected-areas-wdpa",
@@ -318,7 +993,25 @@
     ],
     "url": "https://www.protectedplanet.net/",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Record source vintage and extraction timestamp; no uniform observation period",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Snapshot/revision dates for the selected layer",
+      "native_spatial_resolution": "Vector geometry; record source mapping scale and positional accuracy for the selected layer",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "ebird-cornell-lab-of-ornithology",
@@ -328,7 +1021,25 @@
     ],
     "url": "https://ebird.org/explore",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "gbif-global-biodiversity-information-facility",
@@ -337,8 +1048,28 @@
       "Conservation and Wildlife Data"
     ],
     "url": "https://www.gbif.org/",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "GBIF occurrence records; reproducible selection requires download DOI and filters",
+      "geographic_coverage": "Global, with uneven spatial and taxonomic sampling",
+      "available_time_coverage": "Use eventDate/year from selected occurrences; report returned minimum/maximum and missing dates",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Irregular occurrence events; eventDate can be a date range",
+      "native_spatial_resolution": "Occurrence coordinates; use coordinateUncertaintyInMeters and generalization flags",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://www.gbif.org/data-quality-requirements-occurrences",
+      "product_notes": "No uniform raster resolution or repeat interval. A download date is not an observation date.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications"
+    },
+    "implementations": []
   },
   {
     "id": "usgs-protected-areas-and-species-distributions",
@@ -347,8 +1078,26 @@
       "Conservation and Wildlife Data"
     ],
     "url": "https://www.usgs.gov/programs/gap-analysis-project/science/species",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "usda-nass",
@@ -358,7 +1107,25 @@
     ],
     "url": "https://www.nass.usda.gov/Data_and_Statistics/index.php",
     "status": "candidate",
-    "kind": "portal / resource"
+    "kind": "portal / resource",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "fao-giews",
@@ -368,7 +1135,25 @@
     ],
     "url": "https://www.fao.org/giews/data-tools/en/",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "epa-air-quality-system-aqs",
@@ -378,7 +1163,25 @@
     ],
     "url": "https://www.epa.gov/aqs",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "usgs-biodata",
@@ -388,7 +1191,25 @@
     ],
     "url": "https://pubs.usgs.gov/fs/2011/3112/",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "homeland-infrastructure-foundation-level-data-hifld",
@@ -398,7 +1219,25 @@
     ],
     "url": "https://www.dhs.gov/gmo/hifld",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "local-gis-resources",
@@ -408,7 +1247,25 @@
     ],
     "url": null,
     "status": "candidate",
-    "kind": "local / governed resource"
+    "kind": "local / governed resource",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "usgs-landfire",
@@ -418,7 +1275,25 @@
     ],
     "url": "https://landfire.gov/data",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "fuelcast",
@@ -428,7 +1303,25 @@
     ],
     "url": "https://www.fuelcast.net",
     "status": "candidate",
-    "kind": "source candidate"
+    "kind": "source candidate",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "u-s-census-bureau",
@@ -437,8 +1330,26 @@
       "Socio-Cultural Data"
     ],
     "url": "https://data.census.gov/",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "bureau-of-indian-affairs-bia-gis",
@@ -447,8 +1358,27 @@
       "Socio-Cultural Data"
     ],
     "url": "https://www.bia.gov/gis",
-    "status": "candidate",
-    "kind": "source candidate"
+    "status": "implemented",
+    "kind": "source candidate",
+    "selection_status": "selected",
+    "implementation_status": "implemented",
+    "implementation_evidence": "reported by project owner; repository link pending",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Record source vintage and extraction timestamp; no uniform observation period",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Snapshot/revision dates for the selected layer",
+      "native_spatial_resolution": "Vector geometry; record source mapping scale and positional accuracy for the selected layer",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "product_notes": "User reports implementation. Reviewed boundary code uses Census TIGER; keep the BIA layer and its repository link separate until identified.",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "tribal-and-cultural-lands",
@@ -458,7 +1388,25 @@
     ],
     "url": null,
     "status": "candidate",
-    "kind": "local / governed resource"
+    "kind": "local / governed resource",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Record source vintage and extraction timestamp; no uniform observation period",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Snapshot/revision dates for the selected layer",
+      "native_spatial_resolution": "Vector geometry; record source mapping scale and positional accuracy for the selected layer",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "nasa-earthdata",
@@ -468,7 +1416,25 @@
     ],
     "url": "https://earthdata.nasa.gov/",
     "status": "candidate",
-    "kind": "portal / resource"
+    "kind": "portal / resource",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "local-research-outputs-olc",
@@ -478,7 +1444,25 @@
     ],
     "url": null,
     "status": "candidate",
-    "kind": "local / governed resource"
+    "kind": "local / governed resource",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "student-projects",
@@ -488,7 +1472,25 @@
     ],
     "url": null,
     "status": "candidate",
-    "kind": "local / governed resource"
+    "kind": "local / governed resource",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "Collection/layer identifier still needed",
+      "geographic_coverage": "Depends on selected product or local resource",
+      "available_time_coverage": "Depends on selected product; record actual start/end or vintage",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Select product before assigning an interval",
+      "native_spatial_resolution": "Select product before assigning grid spacing, mapping scale or positional accuracy",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "documentation_reviewed": "Field structure reviewed 2026-09-05; source specifications require the selected product metadata"
+    },
+    "implementations": []
   },
   {
     "id": "cdl",
@@ -498,7 +1500,28 @@
     ],
     "url": "https://www.nass.usda.gov/Research_and_Science/Cropland/SARS1a.php",
     "status": "documented",
-    "kind": "product / product family"
+    "kind": "product / product family",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "USDA NASS Cropland Data Layer; identify year and native/resampled product",
+      "geographic_coverage": "CONUS for this selection",
+      "available_time_coverage": "Annual CONUS coverage from 2008; latest release not newly checked",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Annual crop classifications",
+      "native_spatial_resolution": "30 m historical; 10 m native beginning 2024, with 30 m resampled option",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://www.nass.usda.gov/Research_and_Science/Cropland/SARS1a.php",
+      "product_notes": "Keep year-specific legend and accuracy metadata; do not silently mix 10 m and 30 m products. Earlier provider review retained.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications",
+      "prior_format_notes": "Categorical raster downloads; retain the original GeoTIFF, class legend and year-specific metadata. NetCDF is a possible derived output, not an implemented conversion."
+    },
+    "implementations": []
   },
   {
     "id": "smap",
@@ -508,6 +1531,27 @@
     ],
     "url": "https://nsidc.org/data/spl4smgp/versions/8",
     "status": "documented",
-    "kind": "product / product family"
+    "kind": "product / product family",
+    "selection_status": "candidate",
+    "implementation_status": "not implemented",
+    "implementation_evidence": "none recorded",
+    "metadata": {
+      "product_version": "SPL4SMGP Version 8, surface and root-zone soil moisture",
+      "geographic_coverage": "Global",
+      "available_time_coverage": "Mission era from 2015; exact first/last available granules not checked",
+      "project_time_coverage": "Series-specific dates not recorded",
+      "temporal_interval": "Three-hourly",
+      "native_spatial_resolution": "9 km EASE-Grid",
+      "project_output_resolution": "Not recorded; retain separately from source resolution",
+      "source_format": "Product/access-route dependent",
+      "project_output_format": "Not recorded",
+      "availability_checked": "No live availability check in this metadata review",
+      "latest_observation_confirmed": "Not checked",
+      "provider_reference": "https://nsidc.org/data/spl4smgp/versions/8",
+      "product_notes": "L4 modeled/assimilated surface and root-zone estimates. HDF5 source; preserve grid and layer/depth. Earlier provider review retained; no new download.",
+      "documentation_reviewed": "2026-09-05; linked provider reference and existing documented specifications",
+      "prior_format_notes": "HDF5 source granules. NetCDF/Zarr would be derived outputs, not downloads implemented here."
+    },
+    "implementations": []
   }
 ]

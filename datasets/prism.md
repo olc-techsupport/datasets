@@ -3,13 +3,33 @@
 | Field | Value |
 | --- | --- |
 | Status | documented |
-| Product | PRISM CONUS precipitation and temperature time series; exact release selected per analysis |
-| Coverage and scale | CONUS; distinct 800 m and 4 km products; daily/monthly availability must be checked for the chosen variable and release. |
-| Source / output formats | Current grid downloads: ZIP containing COG GeoTIFF and ancillary metadata. NetCDF/Zarr are possible conversions, not implemented outputs here. |
-| Proposed series and purpose | Climate and drought (proposed). |
-| Project selection | Example settings only where supplied; production extent and period unconfirmed. |
-| Documentation reviewed | 2026-09-05; see linked provider sources. |
+| Selection | candidate |
+| Implementation | not implemented; none recorded |
+| Entry type | product / product family |
+| Topics / series | Climate and drought (proposed). |
+| Product / version | PRISM CONUS precipitation/temperature time series; select resolution and release |
+| Geographic coverage | CONUS for this selection |
+| Available time coverage | Daily/monthly periods vary by product; exact start/end not newly checked |
+| Project time coverage | Series-specific dates not recorded |
+| Temporal interval | Daily or monthly; 30-year normals are a separate product |
+| Native spatial resolution / scale | Separate 800 m and 4 km products |
+| Project output resolution | Not recorded; retain separately from source resolution |
+| Source format | Product/access-route dependent |
+| Project output format | Not recorded |
+| Availability checked | No live availability check in this metadata review |
+| Latest observation confirmed | Not checked |
+| Documentation reviewed | 2026-09-05; linked provider reference and existing documented specifications |
 | Access last tested | Not tested unless a validation record is linked below. |
+
+## Product and series details
+
+Source ZIP contains COG GeoTIFF and ancillary metadata. Prior product notes reviewed 2026-09-05; no new download.
+
+Format details: Current grid downloads: ZIP containing COG GeoTIFF and ancillary metadata. NetCDF/Zarr are possible conversions, not implemented outputs here.
+
+[Provider specification](https://prism.oregonstate.edu/formats/)
+
+[Field definitions and review scope](../docs/metadata.md)
 
 ## Access
 

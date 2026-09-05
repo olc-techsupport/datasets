@@ -2,14 +2,39 @@
 
 | Field | Value |
 | --- | --- |
-| Status | documented |
-| Product | USGS Water Data modern OGC APIs; collection selected by observation type |
-| Coverage and scale | Monitoring locations across the US; temporal coverage varies by station, parameter and collection. The old 2010 start was a project suggestion, not source-wide coverage. |
-| Source / output formats | OGC responses: GeoJSON/JSON. Parquet time series and separate site GeoJSON would be project outputs; no conversion pipeline is provided here. |
-| Proposed series and purpose | Water monitoring (proposed; existing local implementation identified). |
-| Project selection | Example settings only where supplied; production extent and period unconfirmed. |
-| Documentation reviewed | 2026-09-05; see linked provider sources. |
+| Status | implemented |
+| Selection | selected |
+| Implementation | implemented; local code reviewed |
+| Entry type | product / product family |
+| Topics / series | Water monitoring (proposed; existing local implementation identified). |
+| Product / version | USGS modern Water Data API collections; station, parameter and statistic define a series |
+| Geographic coverage | US monitoring network; project selects Tribal-region sites |
+| Available time coverage | Station/parameter specific; report actual returned minimum/maximum separately from request bounds |
+| Project time coverage | Configured analysis 2000–2024; groundwater loader default 1980 onward; actual site coverage varies |
+| Temporal interval | Continuous/daily series or irregular field measurements, depending on collection |
+| Native spatial resolution / scale | Monitoring-location points; no raster cell size |
+| Project output resolution | Point observations/time-series tables; no native raster resolution |
+| Source format | Product/access-route dependent |
+| Project output format | Not recorded |
+| Availability checked | No live availability check in this metadata review |
+| Latest observation confirmed | Not checked |
+| Documentation reviewed | 2026-09-05; linked provider reference and existing documented specifications |
 | Access last tested | Not tested unless a validation record is linked below. |
+
+## Product and series details
+
+Retain units, qualifiers and missing intervals. A configured analysis period does not prove uninterrupted station coverage.
+
+Format details: OGC responses: GeoJSON/JSON. Parquet time series and separate site GeoJSON would be project outputs; no conversion pipeline is provided here.
+
+[Provider specification](https://api.waterdata.usgs.gov/)
+
+- [Implementation](https://github.com/daearconsulting/tribal_water_monitoring/blob/54d191e189c26260ca93b300966333dd88e696d4/config/config.yaml): Analysis years 2000–2024; base period 2000–2020. Groundwater loader separately defaults to 1980 onward.
+- [Implementation](https://github.com/daearconsulting/tribal_water_monitoring/blob/54d191e189c26260ca93b300966333dd88e696d4/src/loaders.py): load_usgs_groundwater_levels defaults to 1980-01-01; field-measurements query is open-ended.
+
+Code inspection records settings; it does not establish a successful run or complete returned coverage.
+
+[Field definitions and review scope](../docs/metadata.md)
 
 ## Access
 

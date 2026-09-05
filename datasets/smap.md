@@ -3,13 +3,33 @@
 | Field | Value |
 | --- | --- |
 | Status | documented |
-| Product | SMAP SPL4SMGP Version 8: L4 surface and root-zone soil moisture |
-| Coverage and scale | Global; 9 km EASE-Grid, three-hourly, mission era beginning in 2015; verify exact granule availability. |
-| Source / output formats | HDF5 source granules. NetCDF/Zarr would be derived outputs, not downloads implemented here. |
-| Proposed series and purpose | Soil moisture and drought (proposed). |
-| Project selection | Example settings only where supplied; production extent and period unconfirmed. |
-| Documentation reviewed | 2026-09-05; see linked provider sources. |
+| Selection | candidate |
+| Implementation | not implemented; none recorded |
+| Entry type | product / product family |
+| Topics / series | Soil moisture and drought (proposed). |
+| Product / version | SPL4SMGP Version 8, surface and root-zone soil moisture |
+| Geographic coverage | Global |
+| Available time coverage | Mission era from 2015; exact first/last available granules not checked |
+| Project time coverage | Series-specific dates not recorded |
+| Temporal interval | Three-hourly |
+| Native spatial resolution / scale | 9 km EASE-Grid |
+| Project output resolution | Not recorded; retain separately from source resolution |
+| Source format | Product/access-route dependent |
+| Project output format | Not recorded |
+| Availability checked | No live availability check in this metadata review |
+| Latest observation confirmed | Not checked |
+| Documentation reviewed | 2026-09-05; linked provider reference and existing documented specifications |
 | Access last tested | Not tested unless a validation record is linked below. |
+
+## Product and series details
+
+L4 modeled/assimilated surface and root-zone estimates. HDF5 source; preserve grid and layer/depth. Earlier provider review retained; no new download.
+
+Format details: HDF5 source granules. NetCDF/Zarr would be derived outputs, not downloads implemented here.
+
+[Provider specification](https://nsidc.org/data/spl4smgp/versions/8)
+
+[Field definitions and review scope](../docs/metadata.md)
 
 ## Access
 

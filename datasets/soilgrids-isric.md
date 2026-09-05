@@ -2,14 +2,33 @@
 
 | Field | Value |
 | --- | --- |
-| Status | candidate |
+| Status | documented |
+| Selection | candidate |
+| Implementation | not implemented; none recorded |
 | Entry type | source candidate |
-| Topics / proposed series | Geology and Soils Data; series assignment unconfirmed |
-| Exact product / version | Not selected |
-| Coverage / dates / resolution | Not verified; obtain from the selected product metadata |
-| Source format / project output | Not selected/not implemented |
+| Topics / series | Geology and Soils Data; series assignment unconfirmed |
+| Product / version | SoilGrids250m version 2.0 |
+| Geographic coverage | Global |
+| Available time coverage | Modeled soil-property release; no annual observation series |
+| Project time coverage | Series-specific dates not recorded |
+| Temporal interval | Static modeled layers by release and depth |
+| Native spatial resolution / scale | 250 m; depths 0–5, 5–15, 15–30, 30–60, 60–100 and 100–200 cm |
+| Project output resolution | Not recorded; retain separately from source resolution |
+| Source format | Product/access-route dependent |
+| Project output format | Not recorded |
+| Availability checked | No live availability check in this metadata review |
+| Latest observation confirmed | Not checked |
+| Documentation reviewed | 2026-09-05; linked provider reference and existing documented specifications |
 | Access last tested | Not tested |
 | Citation / source terms | Record from the selected product before promotion to documented |
+
+## Product and series details
+
+Record property, depth, statistic/quantile and units. Input observation dates are not a uniform map observation year.
+
+[Provider specification](https://docs.isric.org/globaldata/soilgrids/SoilGrids_faqs.html)
+
+[Field definitions and review scope](../docs/metadata.md)
 
 ## Discovery and access
 

@@ -2,14 +2,35 @@
 
 | Field | Value |
 | --- | --- |
-| Status | candidate |
+| Status | implemented |
+| Selection | selected |
+| Implementation | implemented; local code reviewed |
 | Entry type | local / governed resource |
-| Topics / proposed series | Geographic and Spatial Data; series assignment unconfirmed |
-| Exact product / version | Not selected |
-| Coverage / dates / resolution | Not verified; obtain from the selected product metadata |
-| Source format / project output | Not selected/not implemented |
+| Topics / series | Geographic and Spatial Data; series assignment unconfirmed |
+| Product / version | Census TIGER/Line 2023 AIANNH in the tutorial |
+| Geographic coverage | US AIANNH source filtered to Pine Ridge |
+| Available time coverage | Annual boundary vintage; reviewed code selects 2023 |
+| Project time coverage | TIGER/Line 2023 vintage; not a measurement time series |
+| Temporal interval | Boundary snapshot |
+| Native spatial resolution / scale | Vector polygons; positional accuracy is not pixel resolution |
+| Project output resolution | Dissolved polygon GeoJSON, EPSG:4326; no pixel size |
+| Source format | TIGER/Line zipped Shapefile |
+| Project output format | GeoJSON |
+| Availability checked | No live availability check in this metadata review |
+| Latest observation confirmed | Not checked |
+| Documentation reviewed | Field structure reviewed 2026-09-05; source specifications require the selected product metadata |
 | Access last tested | Not tested |
 | Citation / source terms | Record from the selected product before promotion to documented |
+
+## Product and series details
+
+Statistical boundary representation must not be equated with an authoritative jurisdictional determination.
+
+- [Implementation](https://github.com/olc-techsupport/data_cube_tutorial/blob/a406384bde03ffd16e392c422ffdc6b9b4fd4dd4/src/cube_utils.py): load_pine_ridge_boundary uses Census TIGER2023 AIANNH, filtered to Pine Ridge. This is not evidence of a BIA layer.
+
+Code inspection records settings; it does not establish a successful run or complete returned coverage.
+
+[Field definitions and review scope](../docs/metadata.md)
 
 ## Discovery and access
 

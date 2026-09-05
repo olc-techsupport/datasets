@@ -2,14 +2,37 @@
 
 | Field | Value |
 | --- | --- |
-| Status | candidate |
+| Status | implemented |
+| Selection | selected |
+| Implementation | implemented; local code reviewed |
 | Entry type | source candidate |
-| Topics / proposed series | Geology and Soils Data; series assignment unconfirmed |
-| Exact product / version | Not selected |
-| Coverage / dates / resolution | Not verified; obtain from the selected product metadata |
-| Source format / project output | Selected / not implemented |
+| Topics / series | Geology and Soils Data; series assignment unconfirmed |
+| Product / version | SSURGO soil map units and component/horizon tables; identify survey-area versions |
+| Geographic coverage | US survey areas with available coverage |
+| Available time coverage | Survey publication/update dates vary by area; extraction date recorded separately |
+| Project time coverage | Survey-area vintages and retrieval dates; no fixed annual period |
+| Temporal interval | Survey snapshots and revisions; not an annual soil measurement series |
+| Native spatial resolution / scale | Vector mapping scales commonly 1:12,000 to 1:63,360; not a fixed pixel size |
+| Project output resolution | Map-unit/tabular soil data; output depends on workflow |
+| Source format | Product/access-route dependent |
+| Project output format | Not recorded |
+| Availability checked | No live availability check in this metadata review |
+| Latest observation confirmed | Not checked |
+| Documentation reviewed | 2026-09-05; linked provider reference and existing documented specifications |
 | Access last tested | Not tested |
 | Citation / source terms | Record from the selected product before promotion to documented |
+
+## Product and series details
+
+Web Soil Survey and the downloader are access routes. Keep map-unit polygons, tabular properties and any rasterized project output distinct; gSSURGO requires its own grid specification.
+
+[Provider specification](https://www.nrcs.usda.gov/resources/data-and-reports/soil-survey-geographic-database-ssurgo)
+
+- [Implementation](https://github.com/olc-techsupport/Geology-soils-geology/blob/7d898555fbdd4f5f53caa53adcfbe52df04394e5/src/ssurgo.py): SSURGO handling exists in the soils/geology repository; runtime input survey version must accompany each result.
+
+Code inspection records settings; it does not establish a successful run or complete returned coverage.
+
+[Field definitions and review scope](../docs/metadata.md)
 
 ## Discovery and access
 

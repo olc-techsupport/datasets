@@ -7,3 +7,10 @@
 5. Before a teaching/research release, rerun the used examples and check those product links. Record failures and review changed schemas, endpoints or versions. Retire superseded entries with replacement links.
 
 Keep examples small; do not add full-region downloads by default. Never commit data or secrets. Preserve source quality flags, units and metadata. Do not claim streaming where the provider only offers full downloads. Link full series pipelines instead of duplicating them.
+
+
+## Coverage and implementation metadata
+
+Keep the dataset table and its `catalog.json` metadata synchronized. Separate provider coverage from requested project dates and actual returned dates. Record source grid spacing/mapping scale separately from output grids; resampling does not improve source information resolution. Use event dates and positional uncertainty for occurrences, survey depths/versions for soils, and publication/vintage dates for maps. A portal has no universal time coverage or resolution.
+
+Store selection and implementation status independently of live access validation. Preserve project-owner implementation reports, and add repository/file links and a reviewed commit when code is available. Do not assign a collection version from a sensor name alone. Record latest observations only after checking returned data or provider availability metadata, with the check date. Keep historical projections, observations and climate normals distinct.

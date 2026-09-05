@@ -10,3 +10,8 @@
 | Community and land stewardship | Census, boundaries, approved local resources | Community context under applicable governance |
 
 Before calling a dataset “in use,” add the series repository link, owner, exact product, analysis period and role to its record. Confirm the authoritative boundary independently of illustrative sample coordinates. Other catalog topics remain available for future series.
+
+
+## Implemented series evidence
+
+Dataset records now link reviewed code where identified, including the data cube tutorial, bison habitat, water monitoring and soils/geology repositories. Their configured periods and output grids are separate from provider archive specifications; see [review details](metadata.md). Owner-reported implementations without identified code retain their status and a pending repository link.

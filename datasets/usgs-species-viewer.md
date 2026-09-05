@@ -2,14 +2,31 @@
 
 | Field | Value |
 | --- | --- |
-| Status | candidate |
+| Status | implemented |
+| Selection | selected |
+| Implementation | implemented; reported by project owner; repository link pending |
 | Entry type | source candidate |
-| Topics / proposed series | Vegetation and Land Cover; series assignment unconfirmed |
-| Exact product / version | Not selected |
-| Coverage / dates / resolution | Not verified; obtain from the selected product metadata |
-| Source format / project output | Selected/Implemented |
+| Topics / series | Vegetation and Land Cover; series assignment unconfirmed |
+| Product / version | Collection/layer identifier still needed |
+| Geographic coverage | Depends on selected product or local resource |
+| Available time coverage | Depends on selected product; record actual start/end or vintage |
+| Project time coverage | Series-specific dates not recorded |
+| Temporal interval | Select product before assigning an interval |
+| Native spatial resolution / scale | Select product before assigning grid spacing, mapping scale or positional accuracy |
+| Project output resolution | Not recorded; retain separately from source resolution |
+| Source format | Product/access-route dependent |
+| Project output format | Not recorded |
+| Availability checked | No live availability check in this metadata review |
+| Latest observation confirmed | Not checked |
+| Documentation reviewed | Field structure reviewed 2026-09-05; source specifications require the selected product metadata |
 | Access last tested | Not tested |
 | Citation / source terms | Record from the selected product before promotion to documented |
+
+## Product and series details
+
+Implementation is recorded from the project owner’s update. Add the repository and script/notebook link to identify its exact collection and analysis settings.
+
+[Field definitions and review scope](../docs/metadata.md)
 
 ## Discovery and access
 

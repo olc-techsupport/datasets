@@ -2,14 +2,35 @@
 
 | Field | Value |
 | --- | --- |
-| Status | candidate |
+| Status | implemented |
+| Selection | selected |
+| Implementation | implemented; reported by project owner; repository link pending |
 | Entry type | source candidate |
-| Topics / proposed series | Conservation and Wildlife Data; series assignment unconfirmed |
-| Exact product / version | Not selected |
-| Coverage / dates / resolution | Not verified; obtain from the selected product metadata |
-| Source format / project output | Selected/Implemented |
+| Topics / series | Conservation and Wildlife Data; series assignment unconfirmed |
+| Product / version | GBIF occurrence records; reproducible selection requires download DOI and filters |
+| Geographic coverage | Global, with uneven spatial and taxonomic sampling |
+| Available time coverage | Use eventDate/year from selected occurrences; report returned minimum/maximum and missing dates |
+| Project time coverage | Series-specific dates not recorded |
+| Temporal interval | Irregular occurrence events; eventDate can be a date range |
+| Native spatial resolution / scale | Occurrence coordinates; use coordinateUncertaintyInMeters and generalization flags |
+| Project output resolution | Not recorded; retain separately from source resolution |
+| Source format | Product/access-route dependent |
+| Project output format | Not recorded |
+| Availability checked | No live availability check in this metadata review |
+| Latest observation confirmed | Not checked |
+| Documentation reviewed | 2026-09-05; linked provider reference and existing documented specifications |
 | Access last tested | Not tested |
 | Citation / source terms | Record from the selected product before promotion to documented |
+
+## Product and series details
+
+No uniform raster resolution or repeat interval. A download date is not an observation date.
+
+[Provider specification](https://www.gbif.org/data-quality-requirements-occurrences)
+
+Implementation is recorded from the project owner’s update. Add the repository and script/notebook link to identify its exact collection and analysis settings.
+
+[Field definitions and review scope](../docs/metadata.md)
 
 ## Discovery and access
 
