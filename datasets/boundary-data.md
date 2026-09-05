@@ -16,7 +16,6 @@
 | Project output resolution | Dissolved polygon GeoJSON, EPSG:4326; no pixel size |
 | Source format | TIGER/Line zipped Shapefile |
 | Project output format | GeoJSON |
-| Availability checked | No live availability check in this metadata review |
 | Latest observation confirmed | Not checked |
 | Documentation reviewed | Field structure reviewed 2026-09-05; source specifications require the selected product metadata |
 | Access last tested | Not tested |

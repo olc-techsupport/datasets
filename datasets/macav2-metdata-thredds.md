@@ -16,7 +16,6 @@
 | Project output resolution | Nearest grid-cell monthly CSV; no new climate spatial detail from habitat output grid |
 | Source format | Monthly NetCDF via OPeNDAP |
 | Project output format | Point time-series CSV |
-| Availability checked | No live availability check in this metadata review |
 | Latest observation confirmed | Not checked |
 | Documentation reviewed | 2026-09-05; linked provider reference and existing documented specifications |
 | Access last tested | Not tested |

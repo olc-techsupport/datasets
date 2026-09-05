@@ -16,7 +16,6 @@
 | Project output resolution | Source GeoTIFF; downstream habitat target is 30 m EPSG:5070 (constants.py) |
 | Source format | GeoTIFF via WCS in reviewed loader |
 | Project output format | GeoTIFF subset and downstream habitat outputs |
-| Availability checked | No live availability check in this metadata review |
 | Latest observation confirmed | Not checked |
 | Documentation reviewed | 2026-09-05; linked provider reference and existing documented specifications |
 | Access last tested | Not tested |

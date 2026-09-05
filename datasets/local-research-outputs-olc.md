@@ -16,7 +16,6 @@
 | Project output resolution | Not recorded; retain separately from source resolution |
 | Source format | Product/access-route dependent |
 | Project output format | Not recorded |
-| Availability checked | No live availability check in this metadata review |
 | Latest observation confirmed | Not checked |
 | Documentation reviewed | Field structure reviewed 2026-09-05; source specifications require the selected product metadata |
 | Access last tested | Not tested |

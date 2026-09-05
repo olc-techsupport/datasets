@@ -16,7 +16,6 @@
 | Project output resolution | Point CSV from native grid; no spatial raster output established |
 | Source format | NetCDF via OPeNDAP in reviewed helper |
 | Project output format | Point time-series CSV |
-| Availability checked | No live availability check in this metadata review |
 | Latest observation confirmed | Not checked |
 | Documentation reviewed | 2026-09-05; linked provider reference and existing documented specifications |
 | Access last tested | Not tested |
