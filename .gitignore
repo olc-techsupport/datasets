@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *.egg-info/
+/build/
+/dist/
 
 # Virtual environments
 .venv/
@@ -11,28 +13,33 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Environment variables
+# Local environment variables and credentials
 .env
 *.env
+.env.*
+!.env.example
+.netrc
+_netrc
 
-# Testing
+# Testing and tooling
 .pytest_cache/
-.coverage
-.coverage.*
+.coverage*
 htmlcov/
-
-# Linting
+.tox/
+.nox/
+.mypy_cache/
 .ruff_cache/
 
 # VSCode personal settings
 .vscode/settings.json
 
-# Data
-data/raw/
-data/interim/
-data/cache/
+# Downloads, caches, provenance and generated outputs
+/data/
+/cache/
+/downloads/
+/outputs/
 
-# Outputs 
-outputs/
-
-# Download provenance and local release decisions
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
