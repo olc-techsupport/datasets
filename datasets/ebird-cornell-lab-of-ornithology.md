@@ -7,7 +7,7 @@
 | Topics / proposed series | Conservation and Wildlife Data; series assignment unconfirmed |
 | Exact product / version | Not selected |
 | Coverage / dates / resolution | Not verified; obtain from the selected product metadata |
-| Source format / project output | Not selected / not implemented |
+| Source format / project output | Not selected/not implemented |
 | Access last tested | Not tested |
 | Citation / source terms | Record from the selected product before promotion to documented |
 
